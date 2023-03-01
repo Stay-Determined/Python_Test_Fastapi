@@ -3,7 +3,6 @@ L'api utilisée est Fastapi
 Le package "pymongo" à été utilisé pour la réalisation des méthodes http de requettage CRUD
 
 Est contenu dans chaque fichier :
-  - mode.py --> le modèle utilisé lors des premiers tests avec le package "mongoengine"
   - main.py --> contient les quatres méthodes CRUD (get, post, put, delete)
   - test_main.py --> contient les différents test des méthodes CRUD
 
