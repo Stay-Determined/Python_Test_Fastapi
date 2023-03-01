@@ -16,10 +16,8 @@ def get_test():
     myTests = pymongo.MongoClient('localhost', 27017)
     dataBase = myTests["test"]
     collection = dataBase["test"]
-    #print(list(collection.find({},{"_id":0})))
     x = jsonable_encoder(list(collection.find({},{"_id":0})))
     return JSONResponse(content=x)
-    return{"Récupération effectuée"}
 
 
 @app.delete("/delete_test")
